@@ -134,6 +134,19 @@ body{
 .svg-greeting:hover{
     fill:#00887b;
 }
+/*================== SVG tool tip css =================*/
+text.svg-tlt-playing {
+    transform: translate(816px, 103px);
+    opacity: 0;
+    font-size: 2em;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.svg-play-tlt:hover .svg-tlt-playing{opacity: 1;}
+
 /*========= bathroom svg css ========== */
 path#XMLID_4_{
     -webkit-transition: all .5s;
