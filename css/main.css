@@ -145,8 +145,31 @@ text.svg-tlt-playing {
     -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
-.svg-play-tlt:hover .svg-tlt-playing{opacity: 1;}
-
+.svg-playing:hover + text.svg-tlt-playing,
+.svg-playing:active + text.svg-tlt-playing
+{opacity: 1;}
+text.svg-tlt-post{
+    transform: translate(826px, 403px);
+    opacity: 0;
+    font-size: 2em;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.svg-post:hover + text.svg-tlt-post{opacity: 1;}
+text.svg-tlt-greeting{
+    transform: translate(127px, 309px);
+    opacity: 0;
+    font-size: 2em;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.svg-greeting:hover + text.svg-tlt-greeting{opacity: 1;}
 /*========= bathroom svg css ========== */
 path#XMLID_4_{
     -webkit-transition: all .5s;
@@ -156,7 +179,7 @@ path#XMLID_4_{
     transition: all .5s;
 }
 path#XMLID_4_:hover {
-    fill: #a52a2a;
+    fill: #65b3fc;
 }
 text#XMLID_1_{
     transform-origin: center;
@@ -169,7 +192,26 @@ text#XMLID_1_:hover {
     fill: #04730f;
 }
 
-
+/*============== Footer ============*/
+footer{
+    height: 150px;
+    background: #888888;
+    color: #ffffff;
+}
+footer p{
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.footer-icon{text-align: center}
+.footer-icon li{
+    display: inline-block;
+    font-size: 3em;
+    padding-right: 30px;
+}
+.fa-facebook{color:#3b5999}
+.fa-twitter{color:#55acee}
 
 @media screen and (min-width: 769px) {
     .hero-txt h1{
@@ -179,4 +221,5 @@ text#XMLID_1_:hover {
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .hero-txt h1{font-size: 3rem}
+    .site-txt{font-size: 16px}
 }
