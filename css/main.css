@@ -116,7 +116,45 @@ body{
 .svg-watch:hover .st7 {
     fill: #ffc107cc !important;
 }
+.svg-playing,
+.svg-post,
+.svg-greeting{
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.svg-playing:hover{
+    fill: #a20784;
+}
+.svg-post:hover{
+    fill:#163169;
+}
+.svg-greeting:hover{
+    fill:#00887b;
+}
+/*========= bathroom svg css ========== */
+path#XMLID_4_{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+path#XMLID_4_:hover {
+    fill: #a52a2a;
+}
+text#XMLID_1_{
+    transform-origin: center;
+    transition: all .5s;
+}
 
+text#XMLID_1_:hover {
+    font-size: 1.7em;
+    font-weight: 200;
+    fill: #04730f;
+}
 
 
 
