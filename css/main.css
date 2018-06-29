@@ -195,7 +195,7 @@ text#XMLID_1_:hover {
 /*============== Footer ============*/
 footer{
     height: 150px;
-    background: #888888;
+    background: #7be0ad;
     color: #ffffff;
 }
 footer p{
@@ -212,6 +212,9 @@ footer p{
 }
 .fa-facebook{color:#3b5999}
 .fa-twitter{color:#55acee}
+.fa-instagram{color:#b90023}
+.fa-google-plus{color:#dd4b39}
+.fa-linkedin{color:#0077B5}
 
 @media screen and (min-width: 769px) {
     .hero-txt h1{
@@ -222,4 +225,16 @@ footer p{
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .hero-txt h1{font-size: 3rem}
     .site-txt{font-size: 16px}
+    footer p{font-size: 13px}
+    .footer-icon li{
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 425px) {
+    .hero-txt h1{font-size: 2rem}
+    .site-txt{font-size: 15px}
+    footer p{font-size: 13px}
+    .footer-icon li{
+        font-size: 1.5em;
+    }
 }
