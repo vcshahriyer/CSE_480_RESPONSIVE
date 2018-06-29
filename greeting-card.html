@@ -53,7 +53,7 @@
 
 <!--====================== Hero section Start =========================-->
 
-<div class="hero-sec">
+<div class="hero-sec-greeting">
     <div class="hero-txt">
         <h1>Greeting Cards</h1>
         <p>Quality and value for all life’s moments.</p>
@@ -63,8 +63,83 @@
 
 
 
+<div class="site-gallery">
+    <h1 class="title">Greeting Cards</h1>
+    <p>Greeting cards gallery with Item details.</p>
+    <div class="gallery-item greeting1">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Birthday</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+
+    <div class="gallery-item greeting2">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Flower</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+
+    <div class="gallery-item greeting3">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Magic Boxes</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+
+    <div class="gallery-item greeting4">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Valentine</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+
+    <div class="gallery-item greeting5">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Full Moon</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+
+    <div class="gallery-item greeting6">
+        <div class="gallery-overlay">
+            <h2 class="gallery-title">Christmas</h2>
+            <a data-toggle="modal" data-target="#myModal" class="gallery-link" href="#">Item Description</a>
+        </div>
+    </div>
+</div>
 
 
+
+
+<!--======================= Bootstrap Modal ==========================-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLongTitle">Product Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img id="modal-img" src="" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 id="modal-heading"></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur exercitationem hic ipsa laudantium non, nostrum numquam qui quo quod voluptatem! Autem consequatur cupiditate deserunt molestias odio officia quam sequi. Et.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!--====================== Footer section =========================-->
@@ -97,5 +172,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+<script src="JavaScript/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 body{
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
 }
-
+.site-section{
+    margin-bottom: 50px;
+}
 #logo {
     max-width: 250px;
     border: 2px solid #ccc;
@@ -36,11 +38,67 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/art-2578353_1920.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/home-heading.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
+
+}
+.hero-sec-time{
+    width: 100%;
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/shop-time-heading.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.hero-sec-greeting{
+    width: 100%;
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/greeting-card-heading.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.hero-sec-playing{
+    width: 100%;
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/playing-card-heading.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+
+}
+.hero-sec-post{
+    width: 100%;
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.5)),url("../Images/my_images/post_card-heading.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 
 }
 .hero-txt{
@@ -127,12 +185,15 @@ body{
 }
 .svg-playing:hover{
     fill: #a20784;
+    cursor: pointer;
 }
 .svg-post:hover{
     fill:#163169;
+    cursor: pointer;
 }
 .svg-greeting:hover{
     fill:#00887b;
+    cursor: pointer;
 }
 /*================== SVG tool tip css =================*/
 text.svg-tlt-playing {
@@ -183,7 +244,7 @@ path#XMLID_4_:hover {
 }
 text#XMLID_1_{
     transform-origin: center;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 text#XMLID_1_:hover {
@@ -191,6 +252,177 @@ text#XMLID_1_:hover {
     font-weight: 200;
     fill: #04730f;
 }
+/*=========== Shop-time page Css ============*/
+.table{
+    width: 80%;
+    margin: 50px auto;
+}
+.form-1{
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
+
+/*=========== Gallery Style ===========*/
+
+.title {
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 100;
+    font-size: 3.75rem;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    color: #3E3E3E;
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 2.75rem;
+    }
+}
+
+.site-gallery p {
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-family: 'oswald';
+    font-size: 1.25rem;
+    color: #444;
+    font-weight: 100;
+    width: 90%;
+}
+
+.site-gallery {
+    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.gallery-item {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 2rem;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery-item {
+        height: 300px;
+    }
+    .site-gallery p {
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .gallery-item {
+        display: inline-block;
+        width: 45%;
+        margin-left: 25px;
+    }
+}
+
+.gallery-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.gallery-overlay:after {
+    content: '';
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #202020;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.gallery-title {
+    position: relative;
+    top: -200px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 2.25rem;
+    font-family: 'Oswald';
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.gallery-link {
+    position: relative;
+    display: block;
+    width: 60%;
+    top: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Oswald';
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 1.25em;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.gallery-link:hover {
+    background-color: white;
+    color: #202020;
+}
+
+.gallery-item:hover .gallery-title {
+    top: 0;
+}
+
+.gallery-item:hover .gallery-link {
+    top: 0;
+}
+.gallery-item:hover .gallery-overlay:after {
+    opacity: .75;
+}
+/*===================== Modal Css ====================*/
+#modal-heading{
+    margin-bottom: 20px;
+}
+
+/*============= Gallery image throughout the site =================*/
+.greeting1 {background-image: url("../Images/Greetng_Cards/GC1.jpg");}
+.greeting2 {background-image: url("../Images/Greetng_Cards/GC2.jpg");}
+.greeting3 {background-image: url("../Images/Greetng_Cards/GC3.jpg");}
+.greeting4 {background-image: url("../Images/Greetng_Cards/GC4.jpg");}
+.greeting5 {background-image: url("../Images/Greetng_Cards/GC5.jpg");}
+.greeting6 {background-image: url("../Images/Greetng_Cards/GC6.jpg");}
+.playing1{background-image: url("../Images/Playing_Cards/CD1.jpg")}
+.playing2{background-image: url("../Images/Playing_Cards/CD2.jpg")}
+.playing3{background-image: url("../Images/Playing_Cards/CD3.jpg")}
+.playing4{background-image: url("../Images/Playing_Cards/CD4.jpg")}
+.playing5{background-image: url("../Images/Playing_Cards/CD5.jpg")}
+.playing6{background-image: url("../Images/Playing_Cards/CD6.jpg")}
+.playing7{background-image: url("../Images/Playing_Cards/CD7.jpg")}
+.post1{background-image: url("../Images/Postcards/PC1.jpg")}
+.post2{background-image: url("../Images/Postcards/PC2.jpg")}
+.post3{background-image: url("../Images/Postcards/PC3.jpg")}
+.post4{background-image: url("../Images/Postcards/PC4.jpg")}
+.post5{background-image: url("../Images/Postcards/PC5.jpg")}
+.post6{background-image: url("../Images/Postcards/PC6.jpg")}
+.post7{background-image: url("../Images/Postcards/PC7.jpg")}
+
 
 /*============== Footer ============*/
 footer{
@@ -216,6 +448,29 @@ footer p{
 .fa-google-plus{color:#dd4b39}
 .fa-linkedin{color:#0077B5}
 
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-google-plus,
+.fa-linkedin{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-google-plus:hover,
+.fa-linkedin:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 @media screen and (min-width: 769px) {
     .hero-txt h1{
         font-size: 4rem;
@@ -229,6 +484,7 @@ footer p{
     .footer-icon li{
         font-size: 1.5em;
     }
+    .form-1{padding: 0;}
 }
 @media screen and (min-width: 300px) and (max-width: 425px) {
     .hero-txt h1{font-size: 2rem}
@@ -237,4 +493,5 @@ footer p{
     .footer-icon li{
         font-size: 1.5em;
     }
+    .form-1{padding: 0;}
 }
