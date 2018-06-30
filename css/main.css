@@ -162,6 +162,7 @@ body{
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
+    cursor: pointer;
 }
 .svg-watch .st7{
     fill: #fff;
